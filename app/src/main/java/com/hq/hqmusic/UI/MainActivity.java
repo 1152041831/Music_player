@@ -481,7 +481,6 @@ public class MainActivity extends BaseActivity {
                 break;
         }
         adapter.notifyDataSetChanged();
-
         listview.setAdapter(adapter);
 
         // 判断当前歌曲是否在屏幕可见范围内，若是则显示定位图标，否则隐藏
@@ -531,6 +530,7 @@ public class MainActivity extends BaseActivity {
                         list.remove(position);
                         //刷新页面
                         adapter.notifyDataSetChanged();
+                        
                         Toast.makeText(MainActivity.this, "删除成功", Toast.LENGTH_SHORT)
                                 .show();
 
