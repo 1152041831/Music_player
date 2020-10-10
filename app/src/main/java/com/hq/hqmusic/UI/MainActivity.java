@@ -393,6 +393,7 @@ public class MainActivity extends BaseActivity {
             }
         });
 
+        //播放下一首
         imageView_next.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -407,7 +408,7 @@ public class MainActivity extends BaseActivity {
                 }
             }
         });
-
+        //播放上一首
         imageView_front.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -530,7 +531,7 @@ public class MainActivity extends BaseActivity {
                         list.remove(position);
                         //刷新页面
                         adapter.notifyDataSetChanged();
-                        
+
                         Toast.makeText(MainActivity.this, "删除成功", Toast.LENGTH_SHORT)
                                 .show();
 
